@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "can.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,18 @@
 # 1 "<built-in>" 2
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 12 "main.c"
+# 1 "can.c" 2
+# 13 "can.c"
+# 1 "./can.h" 1
+# 20 "./can.h"
+void CAN_SPI_Configure(void);
+uint8_t CAN_SPI_ReadRegisterByte(uint8_t Fu8RegisterAddress);
+void CAN_SPI_WriteRegisterByte(uint8_t Fu8RegisterAddress, uint8_t Fu8Data);
+uint8_t CAN_SPI_ReadStatusRegister(void);
+uint8_t CAN_SPI_ReadOperationMode(void);
+void CAN_SPI_SetNormalOperationMode(void);
+# 13 "can.c" 2
+
 # 1 "./main.h" 1
 # 18 "./main.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.36\\pic\\include\\xc.h" 1 3
@@ -11321,128 +11331,13 @@ char *tempnam(const char *, const char *);
 #pragma config CONFIG6H = 0xE0
 #pragma config CONFIG7L = 0xFF
 #pragma config CONFIG7H = 0x40
-# 13 "main.c" 2
-# 1 "./afficheur.h" 1
-# 38 "./afficheur.h"
-    void write_d_aff(unsigned char data);
-    void write_c_aff(unsigned char command);
-    unsigned char check_status_ok(void);
-    unsigned char wait_status_ok(void);
-    unsigned char command(unsigned char cmd);
-    unsigned char d1command(unsigned char d1, unsigned char cmd);
-    unsigned char d2command(unsigned char d1, unsigned char d2, unsigned char cmd);
-    void delai_us_char(unsigned char ucdelai);
-    void initialisation_afficheur(void);
-    void draw_char(unsigned char dccar);
-    void draw_string(unsigned char * tableau);
-    void draw_hex8(unsigned char octet);
-    void goto_lico(unsigned char ligne, unsigned char colonne);
-    void clear_text(void);
-    void clear_graphics(void);
-    void clear_cgram(void);
-    void plot1(unsigned char x, unsigned char y);
-    void plot0(unsigned char x, unsigned char y);
-    void drawVericalLine(unsigned char ligne, unsigned char colonne, unsigned char lenght);
-# 14 "main.c" 2
-# 1 "./spi.h" 1
-# 19 "./spi.h"
-void SPI_Initialize(void);
-
-uint8_t SPI_ExchangeByte(uint8_t data);
-
-void SPI_ExchangeBlock(void *block, size_t blockSize);
-
-
-void SPI_WriteBlock(void *block, size_t blockSize);
-
-void SPI_ReadBlock(void *block, size_t blockSize);
-
-void SPI_WriteByte(uint8_t byte);
-
-uint8_t SPI_ReadByte(void);
-# 15 "main.c" 2
-# 1 "./eep_spi.h" 1
-# 20 "./eep_spi.h"
-void EEP_SPI_Initialize(void);
-
-void EEP_SPI_EnableWrite(void);
-
-_Bool EEP_SPI_IsWriteInProgress(void);
-
-uint8_t EEP_SPI_ReadByte(uint8_t Fu8Address);
-
-void EEP_SPI_WriteByte(uint8_t Fu8Address, uint8_t Fu8Data);
-
-void EEP_SPI_WriteBytes(uint8_t Fu8Address, uint8_t *Fpu8Data, uint8_t Fu8Size);
-# 16 "main.c" 2
-# 1 "./i2c.h" 1
-# 23 "./i2c.h"
-void I2C_Initialize(void);
-
-void I2C_Write_Register(uint8_t u8Address, uint8_t u8Register, uint8_t u8Value);
-
-uint8_t I2C_Read_Register(uint8_t u8Address, uint8_t u8Register);
-
-void I2C_Read_Registers(uint8_t u8Address, uint8_t u8FirstRegister, uint8_t u8NbRegister, uint8_t *pu8Values);
-# 17 "main.c" 2
-# 1 "./oneWire.h" 1
-# 13 "./oneWire.h"
-uint8_t Start_OneWire(void);
-void Write_bit_OneWire(uint8_t VAL);
-uint8_t Read_bit_OneWire(void);
-# 18 "main.c" 2
-# 1 "./can.h" 1
-# 20 "./can.h"
-void CAN_SPI_Configure(void);
-uint8_t CAN_SPI_ReadRegisterByte(uint8_t Fu8RegisterAddress);
-void CAN_SPI_WriteRegisterByte(uint8_t Fu8RegisterAddress, uint8_t Fu8Data);
-uint8_t CAN_SPI_ReadStatusRegister(void);
-uint8_t CAN_SPI_ReadOperationMode(void);
-void CAN_SPI_SetNormalOperationMode(void);
-# 19 "main.c" 2
+# 14 "can.c" 2
 
 
 
 
 
-uint8_t u8DataFromI2C = 0;
-uint8_t u8Alarme = 0x01;
-uint8_t u8EventCounter[3]={0,0,0};
-
-void initialisation_des_ports()
-{
-
-    MEMCON=0xA0;
-
-
-    ANCON0=0x03;
-    ANCON1=0x08;
-    ANCON2=0x00;
-
-
-
-    LATCbits.LATC2=0;
-    LATCbits.LATC1=0;
-    LATGbits.LATG0=0;
-
-
-    TRISAbits.TRISA2=0;
-    TRISAbits.TRISA3=0;
-    TRISAbits.TRISA4=0;
-    TRISAbits.TRISA5=0;
-    TRISCbits.TRISC2=0;
-    TRISCbits.TRISC1=0;
-    TRISGbits.TRISG0=0;
-    TRISCbits.TRISC3=1;
-    TRISCbits.TRISC4=1;
-
-    TRISDbits.TRISD3=1;
-
-    LATAbits.LATA5 = 0;
-
-
-    INTCON2bits.RBPU=0;
-    PADCFG1bits.REPU=1;
+void CAN_SPI_Configure(void){
 
 }
 
@@ -11451,58 +11346,36 @@ void initialisation_des_ports()
 
 
 
-void main(void){
-
-    initialisation_des_ports();
-    initialisation_afficheur();
-
-    SPI_Initialize();
-    EEP_SPI_Initialize();
-
-    I2C_Initialize();
-
-    clear_text();
-    clear_graphics();
-
-    goto_lico(0,0);
-    draw_string((unsigned char *)"Hello");
-
-    I2C_Write_Register(0xA0,0x00,0x20);
-    I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
+uint8_t CAN_SPI_ReadRegisterByte(uint8_t Fu8RegisterAddress){
+    uint8_t u8ReadData = 0x00;
 
 
-    while(1){goto_lico(0,0);
-        draw_string((unsigned char *)"Hello");
+    LATEbits.LATE7 = 0;
+    SPI_ExchangeByte(0x03);
+    SPI_ExchangeByte(Fu8RegisterAddress);
+    u8ReadData = SPI_ExchangeByte(0x00);
+    LATEbits.LATE7 = 1;
 
-        I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
+    return(u8ReadData);
+}
 
-        goto_lico(2,0);
-        draw_hex8(u8EventCounter[2]);
-        goto_lico(2,2);
-        draw_hex8(u8EventCounter[1]);
-        goto_lico(2,4);
-        draw_hex8(u8EventCounter[0]);
-
-
-        if(!PORTDbits.RD3){
-            I2C_Write_Register(0xA0,0x01,0);
-            I2C_Write_Register(0xA0,0x02,0);
-            I2C_Write_Register(0xA0,0x03,0);
+void CAN_SPI_WriteRegisterByte(uint8_t Fu8RegisterAddress, uint8_t Fu8Data){
+    uint8_t tu8Data[3] = {0x02, Fu8RegisterAddress, Fu8Data};
 
 
-            while(!PORTDbits.RD3);
-        }
+    LATEbits.LATE7 = 0;
+    SPI_ExchangeBlock(&tu8Data, 3);
+    LATEbits.LATE7 = 1;
+}
 
-        u8DataFromI2C = I2C_Read_Register(0xA0, 0x02);
+uint8_t CAN_SPI_ReadStatusRegister(void){
+    return(CAN_SPI_ReadRegisterByte(0x0E));
+}
 
-        if(u8DataFromI2C >= u8Alarme){
-            goto_lico(3,0);
-            draw_string("ALARME ! (Passage au dessus de 126)");
+uint8_t CAN_SPI_ReadOperationMode(void){
+    return((CAN_SPI_ReadStatusRegister()>>5)&0x07);
+}
 
-         LATAbits.LATA5 = 1;
-        }
-        else{
-            draw_string("                                                    ");
-        }
-    }
+void CAN_SPI_SetNormalOperationMode(void){
+    CAN_SPI_WriteRegisterByte(0x0F,0x00);
 }

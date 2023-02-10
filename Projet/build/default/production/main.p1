@@ -1078,20 +1078,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x CONFIG7L  =  0xFF  ]
 "43
 [p x CONFIG7H  =  0x40  ]
-"23 main.c
-[; ;main.c: 23: uint8_t u8DataFromI2C = 0;
+"24 main.c
+[; ;main.c: 24: uint8_t u8DataFromI2C = 0;
 [v _u8DataFromI2C `uc ~T0 @X0 1 e ]
 [i _u8DataFromI2C
 -> -> 0 `i `uc
 ]
-"24
-[; ;main.c: 24: uint8_t u8Alarme = 0x01;
+"25
+[; ;main.c: 25: uint8_t u8Alarme = 0x01;
 [v _u8Alarme `uc ~T0 @X0 1 e ]
 [i _u8Alarme
 -> -> 1 `i `uc
 ]
-"25
-[; ;main.c: 25: uint8_t u8EventCounter[3]={0,0,0};
+"26
+[; ;main.c: 26: uint8_t u8EventCounter[3]={0,0,0};
 [v _u8EventCounter `uc ~T0 @X0 -> 3 `i e ]
 [i _u8EventCounter
 :U ..
@@ -1100,210 +1100,210 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-"27
-[; ;main.c: 27: void initialisation_des_ports()
-[v _initialisation_des_ports `(v ~T0 @X0 1 ef ]
 "28
-[; ;main.c: 28: {
+[; ;main.c: 28: void initialisation_des_ports()
+[v _initialisation_des_ports `(v ~T0 @X0 1 ef ]
+"29
+[; ;main.c: 29: {
 {
 [e :U _initialisation_des_ports ]
 [f ]
-"30
-[; ;main.c: 30:     MEMCON=0xA0;
+"31
+[; ;main.c: 31:     MEMCON=0xA0;
 [e = _MEMCON -> -> 160 `i `uc ]
-"33
-[; ;main.c: 33:     ANCON0=0x03;
-[e = _ANCON0 -> -> 3 `i `uc ]
 "34
-[; ;main.c: 34:     ANCON1=0x08;
-[e = _ANCON1 -> -> 8 `i `uc ]
+[; ;main.c: 34:     ANCON0=0x03;
+[e = _ANCON0 -> -> 3 `i `uc ]
 "35
-[; ;main.c: 35:     ANCON2=0x00;
+[; ;main.c: 35:     ANCON1=0x08;
+[e = _ANCON1 -> -> 8 `i `uc ]
+"36
+[; ;main.c: 36:     ANCON2=0x00;
 [e = _ANCON2 -> -> 0 `i `uc ]
-"39
-[; ;main.c: 39:     LATCbits.LATC2=0;
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 "40
-[; ;main.c: 40:     LATCbits.LATC1=0;
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 40:     LATCbits.LATC2=0;
+[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
 "41
-[; ;main.c: 41:     LATGbits.LATG0=0;
+[; ;main.c: 41:     LATCbits.LATC1=0;
+[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
+"42
+[; ;main.c: 42:     LATGbits.LATG0=0;
 [e = . . _LATGbits 0 0 -> -> 0 `i `uc ]
-"44
-[; ;main.c: 44:     TRISAbits.TRISA2=0;
-[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
 "45
-[; ;main.c: 45:     TRISAbits.TRISA3=0;
-[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
+[; ;main.c: 45:     TRISAbits.TRISA2=0;
+[e = . . _TRISAbits 0 2 -> -> 0 `i `uc ]
 "46
-[; ;main.c: 46:     TRISAbits.TRISA4=0;
-[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 46:     TRISAbits.TRISA3=0;
+[e = . . _TRISAbits 0 3 -> -> 0 `i `uc ]
 "47
-[; ;main.c: 47:     TRISAbits.TRISA5=0;
-[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 47:     TRISAbits.TRISA4=0;
+[e = . . _TRISAbits 0 4 -> -> 0 `i `uc ]
 "48
-[; ;main.c: 48:     TRISCbits.TRISC2=0;
-[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
+[; ;main.c: 48:     TRISAbits.TRISA5=0;
+[e = . . _TRISAbits 0 5 -> -> 0 `i `uc ]
 "49
-[; ;main.c: 49:     TRISCbits.TRISC1=0;
-[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 49:     TRISCbits.TRISC2=0;
+[e = . . _TRISCbits 0 2 -> -> 0 `i `uc ]
 "50
-[; ;main.c: 50:     TRISGbits.TRISG0=0;
-[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
+[; ;main.c: 50:     TRISCbits.TRISC1=0;
+[e = . . _TRISCbits 0 1 -> -> 0 `i `uc ]
 "51
-[; ;main.c: 51:     TRISCbits.TRISC3=1;
-[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+[; ;main.c: 51:     TRISGbits.TRISG0=0;
+[e = . . _TRISGbits 0 0 -> -> 0 `i `uc ]
 "52
-[; ;main.c: 52:     TRISCbits.TRISC4=1;
+[; ;main.c: 52:     TRISCbits.TRISC3=1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"53
+[; ;main.c: 53:     TRISCbits.TRISC4=1;
 [e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
-"54
-[; ;main.c: 54:     TRISDbits.TRISD3=1;
+"55
+[; ;main.c: 55:     TRISDbits.TRISD3=1;
 [e = . . _TRISDbits 0 3 -> -> 1 `i `uc ]
-"56
-[; ;main.c: 56:     LATAbits.LATA5 = 0;
+"57
+[; ;main.c: 57:     LATAbits.LATA5 = 0;
 [e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
-"59
-[; ;main.c: 59:     INTCON2bits.RBPU=0;
-[e = . . _INTCON2bits 2 4 -> -> 0 `i `uc ]
 "60
-[; ;main.c: 60:     PADCFG1bits.REPU=1;
+[; ;main.c: 60:     INTCON2bits.RBPU=0;
+[e = . . _INTCON2bits 2 4 -> -> 0 `i `uc ]
+"61
+[; ;main.c: 61:     PADCFG1bits.REPU=1;
 [e = . . _PADCFG1bits 0 4 -> -> 1 `i `uc ]
-"62
-[; ;main.c: 62: }
+"63
+[; ;main.c: 63: }
 [e :UE 830 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"69
-[; ;main.c: 69: void main(void){
+"70
+[; ;main.c: 70: void main(void){
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"71
-[; ;main.c: 71:     initialisation_des_ports();
-[e ( _initialisation_des_ports ..  ]
 "72
-[; ;main.c: 72:     initialisation_afficheur();
+[; ;main.c: 72:     initialisation_des_ports();
+[e ( _initialisation_des_ports ..  ]
+"73
+[; ;main.c: 73:     initialisation_afficheur();
 [e ( _initialisation_afficheur ..  ]
-"74
-[; ;main.c: 74:     SPI_Initialize();
-[e ( _SPI_Initialize ..  ]
 "75
-[; ;main.c: 75:     EEP_SPI_Initialize();
+[; ;main.c: 75:     SPI_Initialize();
+[e ( _SPI_Initialize ..  ]
+"76
+[; ;main.c: 76:     EEP_SPI_Initialize();
 [e ( _EEP_SPI_Initialize ..  ]
-"77
-[; ;main.c: 77:     I2C_Initialize();
+"78
+[; ;main.c: 78:     I2C_Initialize();
 [e ( _I2C_Initialize ..  ]
-"79
-[; ;main.c: 79:     clear_text();
-[e ( _clear_text ..  ]
 "80
-[; ;main.c: 80:     clear_graphics();
+[; ;main.c: 80:     clear_text();
+[e ( _clear_text ..  ]
+"81
+[; ;main.c: 81:     clear_graphics();
 [e ( _clear_graphics ..  ]
-"82
-[; ;main.c: 82:     goto_lico(0,0);
-[e ( _goto_lico (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
 "83
-[; ;main.c: 83:     draw_string((unsigned char *)"Hello");
+[; ;main.c: 83:     goto_lico(0,0);
+[e ( _goto_lico (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+"84
+[; ;main.c: 84:     draw_string((unsigned char *)"Hello");
 [e ( _draw_string (1 -> :s 1C `*uc ]
-"85
-[; ;main.c: 85:     I2C_Write_Register(0xA0,0x00,0x20);
-[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 0 `i `uc -> -> 32 `i `uc ]
 "86
-[; ;main.c: 86:     I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
+[; ;main.c: 86:     I2C_Write_Register(0xA0,0x00,0x20);
+[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 0 `i `uc -> -> 32 `i `uc ]
+"87
+[; ;main.c: 87:     I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
 [e ( _I2C_Read_Registers (4 , , , -> -> 160 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc &U _u8EventCounter ]
-"89
-[; ;main.c: 89:     while(1){goto_lico(0,0);
+"90
+[; ;main.c: 90:     while(1){goto_lico(0,0);
 [e :U 833 ]
 {
 [e ( _goto_lico (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-"90
-[; ;main.c: 90:         draw_string((unsigned char *)"Hello");
+"91
+[; ;main.c: 91:         draw_string((unsigned char *)"Hello");
 [e ( _draw_string (1 -> :s 2C `*uc ]
-"92
-[; ;main.c: 92:         I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
+"93
+[; ;main.c: 93:         I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
 [e ( _I2C_Read_Registers (4 , , , -> -> 160 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc &U _u8EventCounter ]
-"94
-[; ;main.c: 94:         goto_lico(2,0);
-[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
 "95
-[; ;main.c: 95:         draw_hex8(u8EventCounter[2]);
-[e ( _draw_hex8 (1 *U + &U _u8EventCounter * -> -> -> 2 `i `ui `ux -> -> # *U &U _u8EventCounter `ui `ux ]
+[; ;main.c: 95:         goto_lico(2,0);
+[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
 "96
-[; ;main.c: 96:         goto_lico(2,2);
-[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
+[; ;main.c: 96:         draw_hex8(u8EventCounter[2]);
+[e ( _draw_hex8 (1 *U + &U _u8EventCounter * -> -> -> 2 `i `ui `ux -> -> # *U &U _u8EventCounter `ui `ux ]
 "97
-[; ;main.c: 97:         draw_hex8(u8EventCounter[1]);
-[e ( _draw_hex8 (1 *U + &U _u8EventCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _u8EventCounter `ui `ux ]
+[; ;main.c: 97:         goto_lico(2,2);
+[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
 "98
-[; ;main.c: 98:         goto_lico(2,4);
-[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+[; ;main.c: 98:         draw_hex8(u8EventCounter[1]);
+[e ( _draw_hex8 (1 *U + &U _u8EventCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _u8EventCounter `ui `ux ]
 "99
-[; ;main.c: 99:         draw_hex8(u8EventCounter[0]);
+[; ;main.c: 99:         goto_lico(2,4);
+[e ( _goto_lico (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+"100
+[; ;main.c: 100:         draw_hex8(u8EventCounter[0]);
 [e ( _draw_hex8 (1 *U + &U _u8EventCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _u8EventCounter `ui `ux ]
-"102
-[; ;main.c: 102:         if(!PORTDbits.RD3){
+"103
+[; ;main.c: 103:         if(!PORTDbits.RD3){
 [e $ ! ! != -> . . _PORTDbits 0 3 `i -> 0 `i 835  ]
 {
-"103
-[; ;main.c: 103:             I2C_Write_Register(0xA0,0x01,0);
-[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
 "104
-[; ;main.c: 104:             I2C_Write_Register(0xA0,0x02,0);
-[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 2 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 104:             I2C_Write_Register(0xA0,0x01,0);
+[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 1 `i `uc -> -> 0 `i `uc ]
 "105
-[; ;main.c: 105:             I2C_Write_Register(0xA0,0x03,0);
+[; ;main.c: 105:             I2C_Write_Register(0xA0,0x02,0);
+[e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 2 `i `uc -> -> 0 `i `uc ]
+"106
+[; ;main.c: 106:             I2C_Write_Register(0xA0,0x03,0);
 [e ( _I2C_Write_Register (3 , , -> -> 160 `i `uc -> -> 3 `i `uc -> -> 0 `i `uc ]
-"108
-[; ;main.c: 108:             while(!PORTDbits.RD3);
+"109
+[; ;main.c: 109:             while(!PORTDbits.RD3);
 [e $U 836  ]
 [e :U 837 ]
 [e :U 836 ]
 [e $ ! != -> . . _PORTDbits 0 3 `i -> 0 `i 837  ]
 [e :U 838 ]
-"109
-[; ;main.c: 109:         }
+"110
+[; ;main.c: 110:         }
 }
 [e :U 835 ]
-"111
-[; ;main.c: 111:         u8DataFromI2C = I2C_Read_Register(0xA0, 0x02);
+"112
+[; ;main.c: 112:         u8DataFromI2C = I2C_Read_Register(0xA0, 0x02);
 [e = _u8DataFromI2C ( _I2C_Read_Register (2 , -> -> 160 `i `uc -> -> 2 `i `uc ]
-"113
-[; ;main.c: 113:         if(u8DataFromI2C >= u8Alarme){
+"114
+[; ;main.c: 114:         if(u8DataFromI2C >= u8Alarme){
 [e $ ! >= -> _u8DataFromI2C `i -> _u8Alarme `i 839  ]
 {
-"114
-[; ;main.c: 114:             goto_lico(3,0);
-[e ( _goto_lico (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
 "115
-[; ;main.c: 115:             draw_string("ALARME ! (Passage au dessus de 126)");
+[; ;main.c: 115:             goto_lico(3,0);
+[e ( _goto_lico (2 , -> -> 3 `i `uc -> -> 0 `i `uc ]
+"116
+[; ;main.c: 116:             draw_string("ALARME ! (Passage au dessus de 126)");
 [e ( _draw_string (1 :s 3C ]
-"117
-[; ;main.c: 117:          LATAbits.LATA5 = 1;
-[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
 "118
-[; ;main.c: 118:         }
+[; ;main.c: 118:          LATAbits.LATA5 = 1;
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+"119
+[; ;main.c: 119:         }
 }
 [e $U 840  ]
-"119
-[; ;main.c: 119:         else{
+"120
+[; ;main.c: 120:         else{
 [e :U 839 ]
 {
-"120
-[; ;main.c: 120:             draw_string("                                                    ");
-[e ( _draw_string (1 :s 4C ]
 "121
-[; ;main.c: 121:         }
+[; ;main.c: 121:             draw_string("                                                    ");
+[e ( _draw_string (1 :s 4C ]
+"122
+[; ;main.c: 122:         }
 }
 [e :U 840 ]
-"122
-[; ;main.c: 122:     }
+"123
+[; ;main.c: 123:     }
 }
 [e :U 832 ]
 [e $U 833  ]
 [e :U 834 ]
-"123
-[; ;main.c: 123: }
+"124
+[; ;main.c: 124: }
 [e :UE 831 ]
 }
 [a 1C 72 101 108 108 111 0 ]

@@ -15,6 +15,7 @@
 #include "eep_spi.h"
 #include "i2c.h"
 #include "oneWire.h"
+#include "can.h"
 
 /*****************************/
 /***** VARIABLE GLOBALES *****/

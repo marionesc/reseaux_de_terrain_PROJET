@@ -55,9 +55,11 @@ uint8_t Start_OneWire(void){
  * 
  * @param value
  */
-void Write_bit_OneWire(uint8_t VAL){
-   DSIO_O = 0;  
-   TRIS_DSIO = 0;    // configure DS18B20_PIN pin as output  tRIS_DSIO   TRISCbits.TRISC5
+
+// CONSEIL MADE IN ANTINI :  mettre un retrun pour valider la fonction
+void Write_bit_OneWire(uint8_t VAL){ //TODO:
+  DSIO_O = 0;  
+  TRIS_DSIO = 0;    // configure DS18B20_PIN pin as output  tRIS_DSIO   TRISCbits.TRISC5
   __delay_us(2);
   DSIO_O  = ( (VAL)&(0x01) );
   __delay_us(80);       // wait 80 us
@@ -85,3 +87,6 @@ uint8_t Read_bit_OneWire(void){
 
   return value;
 }
+
+
+

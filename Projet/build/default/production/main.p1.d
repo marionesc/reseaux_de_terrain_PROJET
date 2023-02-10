@@ -5,4 +5,5 @@ afficheur.h  \
 spi.h  \
 eep_spi.h  \
 i2c.h  \
-oneWire.h 
+oneWire.h  \
+can.h 

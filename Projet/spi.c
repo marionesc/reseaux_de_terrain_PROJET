@@ -1,5 +1,5 @@
 /* 
- * File:    spi.h
+ * File:    spi.c
  * Author:  Aksel BROSSARD
  *          Marion ESCOUTELOUP
  *          Rafael SOLLARI
