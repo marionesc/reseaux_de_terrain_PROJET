@@ -1,8 +1,13 @@
 /* 
- * File:   afficheur.h
- * Author: Franck
+ * File:    afficheur.h
+ * Author:  Aksel BROSSARD
+ *          Marion ESCOUTELOUP
+ *          Rafael SOLLARI
+ *          Thomas JAMET
+ * 
+ * GitHub : marionesc
  *
- * Created on 29 janvier 2018, 10:19
+ * Created on 6 février 2023
  */
 
 #ifndef AFFICHEUR_H

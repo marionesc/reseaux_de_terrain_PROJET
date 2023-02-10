@@ -1,16 +1,15 @@
 /* 
- * File:    OneWire.h
- * Author:  Aksel BROSSARD & Marion ESCOUTELOUP
+ * File:    oneWire.h
+ * Author:  Aksel BROSSARD
+ *          Marion ESCOUTELOUP
+ *          Rafael SOLLARI
+ *          Thomas JAMET
+ * 
  * GitHub : marionesc
  *
- * Created on 6 février 2023, 11:14
+ * Created on 6 février 2023
  */
 
-#ifndef 1WIRE_H
-#define	1WIRE_H
-
-
-
-char set_oneWire(unsigned char *VAL, char *Dest);
-char set_crc(char *tram1wire);
-char get_oneWire(unsigned char VAL, char *Dest);
+uint8_t Start_OneWire(void); 
+void Write_bit_OneWire(uint8_t VAL);
+uint8_t Read_bit_OneWire(void);

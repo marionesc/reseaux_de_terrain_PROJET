@@ -1,3 +1,15 @@
+/* 
+ * File:    eep_spi.h
+ * Author:  Aksel BROSSARD
+ *          Marion ESCOUTELOUP
+ *          Rafael SOLLARI
+ *          Thomas JAMET
+ * 
+ * GitHub : marionesc
+ *
+ * Created on 6 février 2023
+ */
+
 #ifndef EEP_SPI_H
 #define EEP_SPI_H
 

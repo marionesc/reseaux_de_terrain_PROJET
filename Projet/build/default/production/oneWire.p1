@@ -1,84 +1,61 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"6158 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6158: extern volatile unsigned char SSP2STAT __attribute__((address(0xF68)));
-[v _SSP2STAT `Vuc ~T0 @X0 0 e@3944 ]
-"6038
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6038: extern volatile unsigned char SSP2CON1 __attribute__((address(0xF67)));
-[v _SSP2CON1 `Vuc ~T0 @X0 0 e@3943 ]
-"10725
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10725:     struct {
-[s S469 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S469 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
-"10724
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10724: typedef union {
-[u S468 `S469 1 ]
-[n S468 . . ]
-"10736
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10736: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF95)));
-[v _TRISDbits `VS468 ~T0 @X0 0 e@3989 ]
-"10849
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10849:     struct {
-[s S473 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S473 . . TRISF1 TRISF2 TRISF3 TRISF4 TRISF5 TRISF6 TRISF7 ]
-"10848
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10848: typedef union {
-[u S472 `S473 1 ]
-[n S472 . . ]
-"10860
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10860: extern volatile TRISFbits_t TRISFbits __attribute__((address(0xF97)));
-[v _TRISFbits `VS472 ~T0 @X0 0 e@3991 ]
-"10137
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10137:     struct {
-[s S451 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S451 . . LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
-"10147
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10147:     struct {
-[s S452 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S452 . . LF1 LF2 LF3 LF4 LF5 LF6 LF7 ]
-"10136
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10136: typedef union {
-[u S450 `S451 1 `S452 1 ]
-[n S450 . . . ]
-"10158
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10158: extern volatile LATFbits_t LATFbits __attribute__((address(0xF8E)));
-[v _LATFbits `VS450 ~T0 @X0 0 e@3982 ]
-"11531
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 11531:     struct {
-[s S499 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S499 . TMR3GIF TMR3IF HLVDIF BCL1IF BCL2IF SSP2IF . OSCFIF ]
-"11541
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 11541:     struct {
-[s S500 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S500 . . LVDIF BCLIF ]
-"11530
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 11530: typedef union {
-[u S498 `S499 1 `S500 1 ]
-[n S498 . . . ]
-"11547
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 11547: extern volatile PIR2bits_t PIR2bits __attribute__((address(0xFA1)));
-[v _PIR2bits `VS498 ~T0 @X0 0 e@4001 ]
-"6044
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6044:     struct {
-[s S276 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S276 . SSPM CKP SSPEN SSPOV WCOL ]
-"6051
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6051:     struct {
-[s S277 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S277 . SSPM0 SSPM1 SSPM2 SSPM3 ]
-"6057
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6057:     struct {
-[s S278 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S278 . SSPM02 SSPM12 SSPM22 SSPM32 CKP2 SSPEN2 SSPOV2 WCOL2 ]
-"6043
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6043: typedef union {
-[u S275 `S276 1 `S277 1 `S278 1 ]
-[n S275 . . . . ]
-"6068
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6068: extern volatile SSP2CON1bits_t SSP2CON1bits __attribute__((address(0xF67)));
-[v _SSP2CON1bits `VS275 ~T0 @X0 0 e@3943 ]
-"6725
-[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 6725: extern volatile unsigned char SSP2BUF __attribute__((address(0xF6A)));
-[v _SSP2BUF `Vuc ~T0 @X0 0 e@3946 ]
+"10663 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10663:     struct {
+[s S467 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S467 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"10662
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10662: typedef union {
+[u S466 `S467 1 ]
+[n S466 . . ]
+"10674
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 10674: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS466 ~T0 @X0 0 e@3988 ]
+"9801
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 9801:     struct {
+[s S442 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S442 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"9811
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 9811:     struct {
+[s S443 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S443 . LC0 LC1 LC2 LC3 LC4 LC5 LC6 LC7 ]
+"9800
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 9800: typedef union {
+[u S441 `S442 1 `S443 1 ]
+[n S441 . . . ]
+"9822
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 9822: extern volatile LATCbits_t LATCbits __attribute__((address(0xF8B)));
+[v _LATCbits `VS441 ~T0 @X0 0 e@3979 ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.36\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"8083 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8083:     struct {
+[s S386 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S386 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
+"8093
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8093:     struct {
+[s S387 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S387 . SOSCO SOSCI . SCK1 SDI1 SDO1 TX1 RX1 ]
+"8103
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8103:     struct {
+[s S388 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S388 . SCKLI CCP2 CCP1 SCL1 SDA1 . CK1 DT1 ]
+"8113
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8113:     struct {
+[s S389 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S389 . . P2A P1A ]
+"8118
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8118:     struct {
+[s S390 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S390 . . PA2 PA1 ]
+"8082
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8082: typedef union {
+[u S385 `S386 1 `S387 1 `S388 1 `S389 1 `S390 1 ]
+[n S385 . . . . . . ]
+"8124
+[; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 8124: extern volatile PORTCbits_t PORTCbits __attribute__((address(0xF82)));
+[v _PORTCbits `VS385 ~T0 @X0 0 e@3970 ]
 "55 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h
 [; ;C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h: 55: __asm("PMD3 equ 0F16h");
 [; <" PMD3 equ 0F16h ;# ">
@@ -951,208 +928,119 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x CONFIG7L  =  0xFF  ]
 "43
 [p x CONFIG7H  =  0x40  ]
-"26 spi.c
-[; ;spi.c: 26: void SPI_Initialize(void){
-[v _SPI_Initialize `(v ~T0 @X0 1 ef ]
+"40 oneWire.c
+[; ;oneWire.c: 40: uint8_t Start_OneWire(void){
+[v _Start_OneWire `(uc ~T0 @X0 1 ef ]
 {
-[e :U _SPI_Initialize ]
+[e :U _Start_OneWire ]
 [f ]
-"28
-[; ;spi.c: 28:     SSP2STAT = 0x00;
-[e = _SSP2STAT -> -> 0 `i `uc ]
-"29
-[; ;spi.c: 29:     SSP2CON1 = 0x31;
-[e = _SSP2CON1 -> -> 49 `i `uc ]
-"33
-[; ;spi.c: 33:     TRISDbits.TRISD4 = 0;
-[e = . . _TRISDbits 0 4 -> -> 0 `i `uc ]
-"35
-[; ;spi.c: 35:     TRISDbits.TRISD6 = 0;
-[e = . . _TRISDbits 0 6 -> -> 0 `i `uc ]
-"37
-[; ;spi.c: 37:     TRISFbits.TRISF7 = 0;
-[e = . . _TRISFbits 0 7 -> -> 0 `i `uc ]
-"38
-[; ;spi.c: 38:     LATFbits.LATF7 = 1;
-[e = . . _LATFbits 0 7 -> -> 1 `i `uc ]
-"39
-[; ;spi.c: 39:     PIR2bits.SSP2IF = 0;
-[e = . . _PIR2bits 0 5 -> -> 0 `i `uc ]
 "41
-[; ;spi.c: 41:     SSP2CON1bits.SSPEN = 1;
-[e = . . _SSP2CON1bits 0 2 -> -> 1 `i `uc ]
+[; ;oneWire.c: 41:     TRISCbits.TRISC5 = 0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
 "42
-[; ;spi.c: 42: }
+[; ;oneWire.c: 42:     LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"43
+[; ;oneWire.c: 43:     _delay((unsigned long)((500)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
+"44
+[; ;oneWire.c: 44:     TRISCbits.TRISC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
+"45
+[; ;oneWire.c: 45:     _delay((unsigned long)((100)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
+"46
+[; ;oneWire.c: 46:     if (PORTCbits.RC5 ==0)
+[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 831  ]
+"47
+[; ;oneWire.c: 47:         {
+{
+"48
+[; ;oneWire.c: 48:             _delay((unsigned long)((400)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
+"49
+[; ;oneWire.c: 49:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 830  ]
+"50
+[; ;oneWire.c: 50:         }
+}
+[e :U 831 ]
+"51
+[; ;oneWire.c: 51:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 830  ]
+"52
+[; ;oneWire.c: 52: }
 [e :UE 830 ]
 }
-"50
-[; ;spi.c: 50: uint8_t SPI_ExchangeByte(uint8_t data){
-[v _SPI_ExchangeByte `(uc ~T0 @X0 1 ef1`uc ]
+"58
+[; ;oneWire.c: 58: void Write_bit_OneWire(uint8_t VAL){
+[v _Write_bit_OneWire `(v ~T0 @X0 1 ef1`uc ]
 {
-[e :U _SPI_ExchangeByte ]
-[v _data `uc ~T0 @X0 1 r1 ]
+[e :U _Write_bit_OneWire ]
+[v _VAL `uc ~T0 @X0 1 r1 ]
 [f ]
-"51
-[; ;spi.c: 51:     SSP2BUF = data;
-[e = _SSP2BUF _data ]
-"52
-[; ;spi.c: 52:     while(!PIR2bits.SSP2IF);
-[e $U 832  ]
-[e :U 833 ]
-[e :U 832 ]
-[e $ ! != -> . . _PIR2bits 0 5 `i -> 0 `i 833  ]
-[e :U 834 ]
-"53
-[; ;spi.c: 53:     PIR2bits.SSP2IF = 0;
-[e = . . _PIR2bits 0 5 -> -> 0 `i `uc ]
-"54
-[; ;spi.c: 54:     return SSP2BUF;
-[e ) _SSP2BUF ]
-[e $UE 831  ]
-"55
-[; ;spi.c: 55: }
-[e :UE 831 ]
-}
+"59
+[; ;oneWire.c: 59:    LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"60
+[; ;oneWire.c: 60:    TRISCbits.TRISC5 = 0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"61
+[; ;oneWire.c: 61:   _delay((unsigned long)((2)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
+"62
+[; ;oneWire.c: 62:   LATCbits.LATC5 = ( (VAL)&(0x01) );
+[e = . . _LATCbits 0 5 -> & -> _VAL `i -> 1 `i `uc ]
 "63
-[; ;spi.c: 63: void SPI_ExchangeBlock(void *block, size_t blockSize){
-[v _SPI_ExchangeBlock `(v ~T0 @X0 1 ef2`*v`ui ]
-{
-[e :U _SPI_ExchangeBlock ]
-[v _block `*v ~T0 @X0 1 r1 ]
-[v _blockSize `ui ~T0 @X0 1 r2 ]
-[f ]
-"64
-[; ;spi.c: 64:     uint8_t *data = block;
-[v _data `*uc ~T0 @X0 1 a ]
-[e = _data -> _block `*uc ]
+[; ;oneWire.c: 63:   _delay((unsigned long)((80)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
 "65
-[; ;spi.c: 65:     while(blockSize--)
-[e $U 836  ]
-[e :U 837 ]
+[; ;oneWire.c: 65:   TRISCbits.TRISC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
 "66
-[; ;spi.c: 66:     {
-{
+[; ;oneWire.c: 66:   _delay((unsigned long)((2)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
 "67
-[; ;spi.c: 67:         SSP2BUF = *data;
-[e = _SSP2BUF *U _data ]
-"68
-[; ;spi.c: 68:         while(!PIR2bits.SSP2IF);
-[e $U 839  ]
-[e :U 840 ]
-[e :U 839 ]
-[e $ ! != -> . . _PIR2bits 0 5 `i -> 0 `i 840  ]
-[e :U 841 ]
-"69
-[; ;spi.c: 69:         PIR2bits.SSP2IF = 0;
-[e = . . _PIR2bits 0 5 -> -> 0 `i `uc ]
-"70
-[; ;spi.c: 70:         *data++ = SSP2BUF;
-[e = *U ++ _data * -> -> 1 `i `x -> -> # *U _data `i `x _SSP2BUF ]
-"71
-[; ;spi.c: 71:     }
+[; ;oneWire.c: 67: }
+[e :UE 832 ]
 }
-[e :U 836 ]
-"65
-[; ;spi.c: 65:     while(blockSize--)
-[e $ != -- _blockSize -> -> 1 `i `ui -> -> 0 `i `ui 837  ]
-[e :U 838 ]
-"72
-[; ;spi.c: 72: }
-[e :UE 835 ]
-}
+"73
+[; ;oneWire.c: 73: uint8_t Read_bit_OneWire(void){
+[v _Read_bit_OneWire `(uc ~T0 @X0 1 ef ]
+{
+[e :U _Read_bit_OneWire ]
+[f ]
+"74
+[; ;oneWire.c: 74:   static uint8_t value;
+[v F6850 `uc ~T0 @X0 1 s value ]
+"76
+[; ;oneWire.c: 76:   LATCbits.LATC5 = 0;
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+"77
+[; ;oneWire.c: 77:   TRISCbits.TRISC5 = 0;
+[e = . . _TRISCbits 0 5 -> -> 0 `i `uc ]
+"78
+[; ;oneWire.c: 78:   _delay((unsigned long)((2)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
 "80
-[; ;spi.c: 80: void SPI_WriteBlock(void *block, size_t blockSize){
-[v _SPI_WriteBlock `(v ~T0 @X0 1 ef2`*v`ui ]
-{
-[e :U _SPI_WriteBlock ]
-[v _block `*v ~T0 @X0 1 r1 ]
-[v _blockSize `ui ~T0 @X0 1 r2 ]
-[f ]
+[; ;oneWire.c: 80:   TRISCbits.TRISC5 = 1;
+[e = . . _TRISCbits 0 5 -> -> 1 `i `uc ]
 "81
-[; ;spi.c: 81:     uint8_t *data = block;
-[v _data `*uc ~T0 @X0 1 a ]
-[e = _data -> _block `*uc ]
-"82
-[; ;spi.c: 82:     while(blockSize--)
-[e $U 843  ]
-[e :U 844 ]
+[; ;oneWire.c: 81:   _delay((unsigned long)((5)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
 "83
-[; ;spi.c: 83:     {
-{
+[; ;oneWire.c: 83:   value = LATCbits.LATC5;
+[e = F6850 . . _LATCbits 0 5 ]
 "84
-[; ;spi.c: 84:         SPI_ExchangeByte(*data++);
-[e ( _SPI_ExchangeByte (1 *U ++ _data * -> -> 1 `i `x -> -> # *U _data `i `x ]
-"85
-[; ;spi.c: 85:     }
-}
-[e :U 843 ]
-"82
-[; ;spi.c: 82:     while(blockSize--)
-[e $ != -- _blockSize -> -> 1 `i `ui -> -> 0 `i `ui 844  ]
-[e :U 845 ]
+[; ;oneWire.c: 84:   _delay((unsigned long)((100)*(11059200/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 11059200 `l `d .4000000.0 `ul ]
 "86
-[; ;spi.c: 86: }
-[e :UE 842 ]
-}
-"93
-[; ;spi.c: 93: void SPI_ReadBlock(void *block, size_t blockSize){
-[v _SPI_ReadBlock `(v ~T0 @X0 1 ef2`*v`ui ]
-{
-[e :U _SPI_ReadBlock ]
-[v _block `*v ~T0 @X0 1 r1 ]
-[v _blockSize `ui ~T0 @X0 1 r2 ]
-[f ]
-"94
-[; ;spi.c: 94:     uint8_t *data = block;
-[v _data `*uc ~T0 @X0 1 a ]
-[e = _data -> _block `*uc ]
-"95
-[; ;spi.c: 95:     while(blockSize--)
-[e $U 847  ]
-[e :U 848 ]
-"96
-[; ;spi.c: 96:     {
-{
-"97
-[; ;spi.c: 97:         *data++ = SPI_ExchangeByte(0);
-[e = *U ++ _data * -> -> 1 `i `x -> -> # *U _data `i `x ( _SPI_ExchangeByte (1 -> -> 0 `i `uc ]
-"98
-[; ;spi.c: 98:     }
-}
-[e :U 847 ]
-"95
-[; ;spi.c: 95:     while(blockSize--)
-[e $ != -- _blockSize -> -> 1 `i `ui -> -> 0 `i `ui 848  ]
-[e :U 849 ]
-"99
-[; ;spi.c: 99: }
-[e :UE 846 ]
-}
-"105
-[; ;spi.c: 105: void SPI_WriteByte(uint8_t byte){
-[v _SPI_WriteByte `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _SPI_WriteByte ]
-[v _byte `uc ~T0 @X0 1 r1 ]
-[f ]
-"106
-[; ;spi.c: 106:     SSP2BUF = byte;
-[e = _SSP2BUF _byte ]
-"107
-[; ;spi.c: 107: }
-[e :UE 850 ]
-}
-"113
-[; ;spi.c: 113: uint8_t SPI_ReadByte(void){
-[v _SPI_ReadByte `(uc ~T0 @X0 1 ef ]
-{
-[e :U _SPI_ReadByte ]
-[f ]
-"114
-[; ;spi.c: 114:     return SSP2BUF;
-[e ) _SSP2BUF ]
-[e $UE 851  ]
-"115
-[; ;spi.c: 115: }
-[e :UE 851 ]
+[; ;oneWire.c: 86:   return value;
+[e ) F6850 ]
+[e $UE 833  ]
+"87
+[; ;oneWire.c: 87: }
+[e :UE 833 ]
 }

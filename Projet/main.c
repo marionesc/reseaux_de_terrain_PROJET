@@ -14,7 +14,7 @@
 #include "spi.h"
 #include "eep_spi.h"
 #include "i2c.h"
-
+#include "oneWire.h"
 
 /*****************************/
 /***** VARIABLE GLOBALES *****/
@@ -24,14 +24,8 @@ uint8_t u8DataFromI2C = 0;
 uint8_t u8Alarme = 0x01;            // Alarme positionner à 126
 uint8_t u8EventCounter[3]={0,0,0};
 
-
-/******************************/
-/***** FONCTIONS GLOBALES *****/
-/******************************/
-/**
- * 
- */
-void initialisation_des_ports(){
+void initialisation_des_ports()
+{
 // Désactivation du bus externe
     MEMCON=0xA0;    //ebdis=1 bus désactivé (sauf en cas d'accès externe)
 
@@ -56,9 +50,9 @@ void initialisation_des_ports(){
     TRISGbits.TRISG0=0; //LED_B en sortie
     TRISCbits.TRISC3=1;
     TRISCbits.TRISC4=1;
-    
+   
     TRISDbits.TRISD3=1;
-    
+   
     LED4 = 0;
 
 // Mise en place des pull up
@@ -73,6 +67,7 @@ void initialisation_des_ports(){
 /***** MAIN PROJET *****/
 /***********************/
 void main(void){
+    // INITIALISATION 
     initialisation_des_ports();
     initialisation_afficheur();
 
@@ -86,47 +81,43 @@ void main(void){
 
     goto_lico(0,0);
     draw_string((unsigned char *)"Hello");
-    
+   
     I2C_Write_Register(0xA0,0x00,0x20); // Configure i2c chip to event counter
     I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
-    while(1)
-    {
-        goto_lico(0,0);
+    
+    // BOUCLE INFINI 
+    while(1){goto_lico(0,0);
         draw_string((unsigned char *)"Hello");
-        
+       
         I2C_Read_Registers(0xA0, 0x01, 3, u8EventCounter);
-        
+       
         goto_lico(2,0);
         draw_hex8(u8EventCounter[2]);
         goto_lico(2,2);
         draw_hex8(u8EventCounter[1]);
         goto_lico(2,4);
         draw_hex8(u8EventCounter[0]);
-        
+       
         // Sur appui du bouton 4, remise à zéro du cpt (sur 3 octets)
-        if(!BP4)
-        {
+        if(!BP4){
             I2C_Write_Register(0xA0,0x01,0);
             I2C_Write_Register(0xA0,0x02,0);
             I2C_Write_Register(0xA0,0x03,0);
 
-            
+           
             while(!BP4);
         }
-        
+       
         u8DataFromI2C = I2C_Read_Register(0xA0, 0x02);
-        
-        if(u8DataFromI2C >= u8Alarme)
-        {
+       
+        if(u8DataFromI2C >= u8Alarme){
             goto_lico(3,0);
             draw_string("ALARME ! (Passage au dessus de 126)");  
          
          LED4 = 1;
         }
-        else
-        {
-            draw_string("                                                                                                              "); 
-        }
-            
+        else{
+            draw_string("                                                    ");
+        }     
     }
 }

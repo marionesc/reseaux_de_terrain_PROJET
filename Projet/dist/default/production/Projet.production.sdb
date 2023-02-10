@@ -3,91 +3,91 @@
 [d edition pro ]
 [d chip 18F87K22 ]
 [d frameptr 4065 ]
-"5 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\afficheur.c
+"27 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\afficheur.c
 [v _write_d_aff write_d_aff `(v  1 e 1 0 ]
-"18
+"43
 [v _write_c_aff write_c_aff `(v  1 e 1 0 ]
-"31
+"59
 [v _check_status_ok check_status_ok `(uc  1 e 1 0 ]
-"54
+"85
 [v _wait_status_ok wait_status_ok `(uc  1 e 1 0 ]
-"91
+"121
 [v _command command `(uc  1 e 1 0 ]
-"107
+"143
 [v _d1command d1command `(uc  1 e 1 0 ]
-"129
+"172
 [v _d2command d2command `(uc  1 e 1 0 ]
-"155
+"202
 [v _delai_us_char delai_us_char `(v  1 e 1 0 ]
-"165
+"215
 [v _initialisation_afficheur initialisation_afficheur `(v  1 e 1 0 ]
-"244
+"301
 [v _draw_string draw_string `(v  1 e 1 0 ]
-"254
+"315
 [v _draw_hex8 draw_hex8 `(v  1 e 1 0 ]
-"276
+"342
 [v _goto_lico goto_lico `(v  1 e 1 0 ]
-"288
+"357
 [v _clear_text clear_text `(v  1 e 1 0 ]
-"299
+"371
 [v _clear_graphics clear_graphics `(v  1 e 1 0 ]
-"321
+"401
 [v _plot1 plot1 `(v  1 e 1 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awdiv.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\awmod.c
+"7 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\fleq.c
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\float.c
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\float.c
 [v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftadd.c
+"86 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftdiv.c
+"54 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftmul.c
+"62 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 4 0 ]
-"19 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\ftsub.c
+"19 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 4 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcdiv.c
+"11 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcmul.c
+"8 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul32.c
+"15 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"91 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul64.c
+"91 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c99\common\Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"4 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\eep_spi.c
+"26 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\eep_spi.c
 [v _EEP_SPI_Initialize EEP_SPI_Initialize `(v  1 e 1 0 ]
-"8
+"32
 [v _EEP_SPI_EnableWrite EEP_SPI_EnableWrite `(v  1 e 1 0 ]
-"15
+"42
 [v _EEP_SPI_IsWriteInProgress EEP_SPI_IsWriteInProgress `(a  1 e 1 0 ]
-"51
+"86
 [v _EEP_SPI_WriteByte EEP_SPI_WriteByte `(v  1 e 1 0 ]
-"4 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\i2c.c
+"27 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\i2c.c
 [v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
-"14
+"43
 [v _I2C_Write_Register I2C_Write_Register `(v  1 e 1 0 ]
-"47
+"81
 [v _I2C_Read_Register I2C_Read_Register `(uc  1 e 1 0 ]
-"102
+"143
 [v _I2C_Read_Registers I2C_Read_Registers `(v  1 e 1 0 ]
-"18 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\main.c
+"27 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\main.c
 [v _initialisation_des_ports initialisation_des_ports `(v  1 e 1 0 ]
-"55
+"69
 [v _main main `(v  1 e 1 0 ]
-"4 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\spi.c
+"26 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\spi.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
-"23
+"50
 [v _SPI_ExchangeByte SPI_ExchangeByte `(uc  1 e 1 0 ]
-"31
+"63
 [v _SPI_ExchangeBlock SPI_ExchangeBlock `(v  1 e 1 0 ]
-"1082 C:\Program Files\Microchip\xc8\v2.40\pic\include\proc\pic18f87k22.h
+"1082 C:\Program Files\Microchip\xc8\v2.36\pic\include\proc\pic18f87k22.h
 [v _ANCON2 ANCON2 `VEuc  1 e 1 @3875 ]
 "1194
 [v _ANCON1 ANCON1 `VEuc  1 e 1 @3876 ]
@@ -138,6 +138,44 @@
 [v _SSP2STAT SSP2STAT `VEuc  1 e 1 @3944 ]
 "6725
 [v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3946 ]
+[s S1136 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"8124
+[s S1145 . 1 `uc 1 SOSCO 1 0 :1:0 
+`uc 1 SOSCI 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCK1 1 0 :1:3 
+`uc 1 SDI1 1 0 :1:4 
+`uc 1 SDO1 1 0 :1:5 
+`uc 1 TX1 1 0 :1:6 
+`uc 1 RX1 1 0 :1:7 
+]
+[s S1154 . 1 `uc 1 SCKLI 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCL1 1 0 :1:3 
+`uc 1 SDA1 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK1 1 0 :1:6 
+`uc 1 DT1 1 0 :1:7 
+]
+[s S1163 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 P2A 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+]
+[s S1167 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S1171 . 1 `S1136 1 . 1 0 `S1145 1 . 1 0 `S1154 1 . 1 0 `S1163 1 . 1 0 `S1167 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES1171  1 e 1 @3970 ]
 [s S739 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
@@ -465,198 +503,195 @@
 ]
 [u S676 . 1 `S658 1 . 1 0 `S661 1 . 1 0 `S670 1 . 1 0 ]
 [v _INTCON2bits INTCON2bits `VES676  1 e 1 @4081 ]
-"14 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\main.c
+"23 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\main.c
 [v _u8DataFromI2C u8DataFromI2C `uc  1 e 1 0 ]
-"16
+"25
 [v _u8EventCounter u8EventCounter `[3]uc  1 e 3 0 ]
-"55
+"69
 [v _main main `(v  1 e 1 0 ]
 {
-"113
+"123
 } 0
-"18
+"27
 [v _initialisation_des_ports initialisation_des_ports `(v  1 e 1 0 ]
 {
-"53
+"62
 } 0
-"165 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\afficheur.c
+"215 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\afficheur.c
 [v _initialisation_afficheur initialisation_afficheur `(v  1 e 1 0 ]
 {
-"168
+"217
 [v initialisation_afficheur@error_count error_count `uc  1 a 1 8 ]
-"227
+"276
 } 0
-"91
+"121
 [v _command command `(uc  1 e 1 0 ]
 {
 [v command@cmd cmd `uc  1 a 1 wreg ]
 [v command@cmd cmd `uc  1 a 1 wreg ]
 [v command@cmd cmd `uc  1 a 1 4 ]
-"105
+"135
 } 0
-"31
+"59
 [v _check_status_ok check_status_ok `(uc  1 e 1 0 ]
 {
-"33
+"60
 [v check_status_ok@res res `uc  1 a 1 0 ]
-"52
+"79
 } 0
-"276
+"342
 [v _goto_lico goto_lico `(v  1 e 1 0 ]
 {
 [v goto_lico@ligne ligne `uc  1 a 1 wreg ]
-"278
+"343
 [v goto_lico@adr adr `ui  1 a 2 12 ]
-"276
+"342
 [v goto_lico@ligne ligne `uc  1 a 1 wreg ]
 [v goto_lico@colonne colonne `uc  1 p 1 8 ]
-"280
+"345
 [v goto_lico@ligne ligne `uc  1 a 1 11 ]
-"286
+"351
 } 0
-"244
+"301
 [v _draw_string draw_string `(v  1 e 1 0 ]
 {
 [v draw_string@tableau tableau `*.32uc  1 p 2 7 ]
-"252
+"308
 } 0
-"254
+"315
 [v _draw_hex8 draw_hex8 `(v  1 e 1 0 ]
 {
 [v draw_hex8@octet octet `uc  1 a 1 wreg ]
-"256
+"316
 [v draw_hex8@c c `uc  1 a 1 8 ]
-"254
+"315
 [v draw_hex8@octet octet `uc  1 a 1 wreg ]
-"258
+"318
 [v draw_hex8@octet octet `uc  1 a 1 7 ]
-"274
+"334
 } 0
-"288
+"357
 [v _clear_text clear_text `(v  1 e 1 0 ]
 {
-"290
+"358
 [v clear_text@add add `ui  1 a 2 8 ]
-"297
+"365
 } 0
-"299
+"371
 [v _clear_graphics clear_graphics `(v  1 e 1 0 ]
 {
-"301
+"372
 [v clear_graphics@add add `ui  1 a 2 8 ]
-"308
+"379
 } 0
-"129
+"172
 [v _d2command d2command `(uc  1 e 1 0 ]
 {
 [v d2command@d1 d1 `uc  1 a 1 wreg ]
-"131
+"173
 [v d2command@res res `uc  1 a 1 7 ]
-"129
+"172
 [v d2command@d1 d1 `uc  1 a 1 wreg ]
 [v d2command@d2 d2 `uc  1 p 1 4 ]
 [v d2command@cmd cmd `uc  1 p 1 5 ]
-"133
+"175
 [v d2command@d1 d1 `uc  1 a 1 6 ]
-"153
+"195
 } 0
-"107
+"143
 [v _d1command d1command `(uc  1 e 1 0 ]
 {
 [v d1command@d1 d1 `uc  1 a 1 wreg ]
-"109
+"144
 [v d1command@res res `uc  1 a 1 6 ]
-"107
+"143
 [v d1command@d1 d1 `uc  1 a 1 wreg ]
 [v d1command@cmd cmd `uc  1 p 1 4 ]
-"111
+"146
 [v d1command@d1 d1 `uc  1 a 1 5 ]
-"127
+"162
 } 0
-"5
+"27
 [v _write_d_aff write_d_aff `(v  1 e 1 0 ]
 {
 [v write_d_aff@data data `uc  1 a 1 wreg ]
 [v write_d_aff@data data `uc  1 a 1 wreg ]
-"7
 [v write_d_aff@data data `uc  1 a 1 0 ]
-"16
+"37
 } 0
-"18
+"43
 [v _write_c_aff write_c_aff `(v  1 e 1 0 ]
 {
 [v write_c_aff@command command `uc  1 a 1 wreg ]
 [v write_c_aff@command command `uc  1 a 1 wreg ]
-"20
 [v write_c_aff@command command `uc  1 a 1 0 ]
-"29
+"53
 } 0
-"54
+"85
 [v _wait_status_ok wait_status_ok `(uc  1 e 1 0 ]
 {
-"56
+"86
 [v wait_status_ok@res res `uc  1 a 1 3 ]
 [v wait_status_ok@status status `uc  1 a 1 2 ]
 [v wait_status_ok@err err `uc  1 a 1 1 ]
-"89
+"119
 } 0
-"155
+"202
 [v _delai_us_char delai_us_char `(v  1 e 1 0 ]
 {
 [v delai_us_char@ucdelai ucdelai `uc  1 a 1 wreg ]
 [v delai_us_char@ucdelai ucdelai `uc  1 a 1 wreg ]
 [v delai_us_char@ucdelai ucdelai `uc  1 a 1 0 ]
-"163
+"209
 } 0
-"4 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\spi.c
+"26 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\spi.c
 [v _SPI_Initialize SPI_Initialize `(v  1 e 1 0 ]
 {
-"21
+"42
 } 0
-"14 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\i2c.c
+"43 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\i2c.c
 [v _I2C_Write_Register I2C_Write_Register `(v  1 e 1 0 ]
 {
 [v I2C_Write_Register@u8Address u8Address `uc  1 a 1 wreg ]
 [v I2C_Write_Register@u8Address u8Address `uc  1 a 1 wreg ]
 [v I2C_Write_Register@u8Register u8Register `uc  1 p 1 0 ]
 [v I2C_Write_Register@u8Value u8Value `uc  1 p 1 1 ]
-"16
 [v I2C_Write_Register@u8Address u8Address `uc  1 a 1 2 ]
-"45
+"73
 } 0
-"102
+"143
 [v _I2C_Read_Registers I2C_Read_Registers `(v  1 e 1 0 ]
 {
 [v I2C_Read_Registers@u8Address u8Address `uc  1 a 1 wreg ]
-"104
+"144
 [v I2C_Read_Registers@u8Cpt u8Cpt `uc  1 a 1 5 ]
-"102
+"143
 [v I2C_Read_Registers@u8Address u8Address `uc  1 a 1 wreg ]
 [v I2C_Read_Registers@u8FirstRegister u8FirstRegister `uc  1 p 1 0 ]
 [v I2C_Read_Registers@u8NbRegister u8NbRegister `uc  1 p 1 1 ]
 [v I2C_Read_Registers@pu8Values pu8Values `*.39uc  1 p 2 2 ]
 [v I2C_Read_Registers@u8Address u8Address `uc  1 a 1 4 ]
-"170
+"209
 } 0
-"47
+"81
 [v _I2C_Read_Register I2C_Read_Register `(uc  1 e 1 0 ]
 {
 [v I2C_Read_Register@u8Address u8Address `uc  1 a 1 wreg ]
-"49
+"82
 [v I2C_Read_Register@u8Value u8Value `uc  1 a 1 1 ]
-"47
+"81
 [v I2C_Read_Register@u8Address u8Address `uc  1 a 1 wreg ]
 [v I2C_Read_Register@u8Register u8Register `uc  1 p 1 0 ]
 [v I2C_Read_Register@u8Address u8Address `uc  1 a 1 2 ]
-"100
+"133
 } 0
-"4
+"27
 [v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
 {
-"12
+"34
 } 0
-"4 C:\Users\thoma\MPLABXProjects\CESI_ReseauTerrain_TP2.X\eep_spi.c
+"26 C:\Users\mario\Desktop\GitHub\reseaux_de_terrain_PROJET\Projet\eep_spi.c
 [v _EEP_SPI_Initialize EEP_SPI_Initialize `(v  1 e 1 0 ]
 {
-"6
+"27
 } 0

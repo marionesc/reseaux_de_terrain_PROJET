@@ -4,4 +4,5 @@ main.h  \
 afficheur.h  \
 spi.h  \
 eep_spi.h  \
-i2c.h 
+i2c.h  \
+oneWire.h 

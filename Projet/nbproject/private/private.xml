@@ -5,9 +5,15 @@
         <group>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/eep_spi.c</file>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/oneWire.c</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/main.h</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/i2c.h</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/oneWire.h</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/eep_spi.h</file>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/spi.c</file>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/afficheur.c</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/afficheur.h</file>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/main.c</file>
+            <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/spi.h</file>
             <file>file:/C:/Users/mario/Desktop/GitHub/reseaux_de_terrain_PROJET/Projet/i2c.c</file>
         </group>
     </open-files>

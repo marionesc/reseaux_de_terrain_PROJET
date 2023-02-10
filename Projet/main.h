@@ -1,19 +1,19 @@
 /* 
- * File:   main.h
- * Author: Franck
+ * File:    main.h
+ * Author:  Aksel BROSSARD
+ *          Marion ESCOUTELOUP
+ *          Rafael SOLLARI
+ *          Thomas JAMET
+ * 
+ * GitHub : marionesc
  *
- * Created on 29 janvier 2018, 10:15
+ * Created on 6 février 2023
  */
 
 #ifndef MAIN_H
 #define	MAIN_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
-
-
-    
+   
 // Include de base
 #include <xc.h>
 #include <stdio.h>

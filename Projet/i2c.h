@@ -1,8 +1,13 @@
 /* 
- * File:   i2c.h
- * Author: Stephane
+ * File:    i2c.h
+ * Author:  Aksel BROSSARD
+ *          Marion ESCOUTELOUP
+ *          Rafael SOLLARI
+ *          Thomas JAMET
+ * 
+ * GitHub : marionesc
  *
- * Created on November 22, 2022, 1:28 PM
+ * Created on 6 février 2023
  */
 
 #ifndef I2C_H
