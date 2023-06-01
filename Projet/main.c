@@ -17,6 +17,7 @@
 #include "oneWire.h"
 #include "can.h"
 
+
 /*****************************/
 /***** VARIABLE GLOBALES *****/
 /*****************************/
@@ -25,8 +26,7 @@ uint8_t u8DataFromI2C = 0;
 uint8_t u8Alarme = 0x01;            // Alarme positionner à 126
 uint8_t u8EventCounter[3]={0,0,0};
 
-void initialisation_des_ports()
-{
+void initialisation_des_ports(){
 // Désactivation du bus externe
     MEMCON=0xA0;    //ebdis=1 bus désactivé (sauf en cas d'accès externe)
 
